@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include("components/head.ejs") %>
+</head>
+<body>
+  <main>
+    <div class="info">
+      <%- include("components/blurb.ejs", { heading: "Uh-oh!" }) %> 
+
+      <p>
+        Something went wrong!
+        <%= message %>
+      </p>
+
+      <p>
+        You might need to try accessing the Gateway again...
+      </p>
+    </div>
+  </main>
+</body>
+</html>

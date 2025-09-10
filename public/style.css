@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    font-family: "Phantom Sans", sans-serif;
+}
+
+@font-face {
+    font-family: "Phantom Sans";
+    src: url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff") format("woff"),
+         url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+  font-family: "Phantom Sans";
+    src: url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff") format("woff"),
+         url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff2") format("woff2");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Phantom Sans";
+    src: url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff") format("woff"),
+         url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff2") format("woff2");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: #f4f4f4;
+    justify-content: center;
+    align-items: center;
+
+    background-size: 40px 40px;
+    background-image:
+        linear-gradient(to right, rgb(233, 233, 233) 1px, transparent 1px),
+        linear-gradient(to bottom, rgb(233, 233, 233) 1px, transparent 1px);
+}
+
+main {
+    background: #fff;
+    padding: 2em;
+    border-radius: 12px;
+    height: 80vh;
+    width: 40vw;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 8px;
+    color: #1F2D3D;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: 1px solid #eee;
+}
+
+h1, p {
+    margin: 0;
+}
+
+h1 {
+    letter-spacing: -0.009em;
+    line-height: 1;
+}
+
+p {
+    letter-spacing: 0.009em;
+    line-height: 1.25;
+}
+
+.slack-icon {
+    color: #fff;
+    box-sizing: border-box;
+    margin: 0px 0px 4px;
+    min-width: 0px;
+    width: fit-content;
+    background-color: rgb(93, 17, 76);
+    border-radius: 18px;
+    line-height: 0;
+    padding: 8px;
+    display: inline-block;
+    transform-origin: left bottom;
+    box-shadow: rgba(255, 255, 255, 0.2) 2px 2px 6px inset, rgba(0, 0, 0, 0.1) -2px -2px 6px inset, rgba(0, 0, 0, 0.1) 0px 1px 4px, rgba(0, 0, 0, 0.1) 0px 4px 8px;
+
+    svg {
+        color: #fff;
+        filter: drop-shadow(rgba(0, 0, 0, 0.125) 0px 2px 3px);
+    }
+}
+
+.blurb {
+    display: flex;
+    gap: .75em;
+    align-items: center;
+}
+
+input[type=email] {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+    padding: .5em;
+}
+
+input {
+    display: block;
+    width: 100%;
+}
+
+.info {
+    display: flex;
+    gap: .5em;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+input[type=submit] {
+    font-size: 1em;
+    border-radius: 2px;
+    background: #EC3950;
+    color: white;
+    border: none;   
+    border-radius: 16px;
+    padding: .5em;
+    transition: transform .25s;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.03);
+    }
+
+    &:active {
+        transform: scale(0.98);
+    }
+}
+
+.mt {
+    margin-top: .5em;
+}
+
+@media screen and (max-width: 500px) {
+    html, body {
+        align-items: unset;
+        height: unset;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    main {
+        width: 95vw;
+        height: unset;
+        padding: 1.5em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    
+    .blurb {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    h1 {
+        margin-bottom: .5em;
+    }
+}

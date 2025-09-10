@@ -1,0 +1,12 @@
+[
+    {
+        "name": "penumbra",
+        "displayName": "Penumbra",
+        "active": true,
+        "channels": [
+            "C0266FRGT", // #announcements
+            "C09EC7ZS05S", // #penumbra
+            "C039PAG1AV7" // #slack-welcome-start
+        ]
+    }
+]

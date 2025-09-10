@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include("components/head.ejs") %>
+</head>
+<body>
+  <main>
+    <div class="info">
+      <%- include("components/blurb.ejs", { heading: "Success!" }) %> 
+
+      <p>
+        We've sent a Slack invite to <b><%= email %></b>.
+        
+        <br><br>
+        
+        If you don't see it in your inbox, try looking in your spam folder. We look forward to meeting you! ❤️
+      </p>
+    </div>
+  </main>
+</body>
+</html>

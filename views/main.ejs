@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include("components/head.ejs") %>
+</head>
+<body>
+  <main>
+    <div class="info">
+      <%- include("components/blurb.ejs", { heading: "Get a Slack invite" }) %> 
+
+      <p>
+        Welcome! We're glad to have you on board. After you click Next, we will send you an e-mail invite to
+        join the Hack Club Slack as a guest.
+      </p>
+
+      <p class="mt">
+        You're joining as a <b><%= ysws.displayName %></b> participant. You can always become a full member later!
+      </p>
+    </div>
+
+    <form action="/send-invite" method="post">
+      <input type="email" name="email" placeholder="E-mail" required>
+      <input type="hidden" name="ysws" value="<%= ysws.name %>">
+      <input type="submit" value="Next">
+    </form>
+  </main>
+</body>
+</html>
