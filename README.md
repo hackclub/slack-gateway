@@ -1,5 +1,7 @@
 # Hack Club Slack Gateway
-Invites users as multi-channel guests to YSWS-specific channels in the Hack Club slack.
+Invites users as multi-channel guests to YSWS-specific channels in the Hack Club Slack.
+
+[`(edit ysws.jsonc)`](https://github.com/hackclub/slack-gateway/edit/main/ysws.jsonc)
 
 <img src="./etc/screenshot.png" alt="A screenshot of the Hack Club Slack Gateway" />
 
