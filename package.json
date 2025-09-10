@@ -11,11 +11,8 @@
   "license": "ISC",
   "description": "Manages Slack invites for external users",
   "devDependencies": {
-    "@types/express": "^5.0.3",
-    "@types/node": "^24.3.1",
     "nodemon": "^3.1.10",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.9.2"
+    "ts-node": "^10.9.2"
   },
   "dependencies": {
     "dotenv": "^17.2.2",
@@ -23,6 +20,9 @@
     "express": "^5.1.0",
     "express-rate-limit": "^8.1.0",
     "json5": "^2.2.3",
-    "yup": "^1.7.0"
+    "yup": "^1.7.0",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.3.1",
+    "typescript": "^5.9.2"
   }
 }
