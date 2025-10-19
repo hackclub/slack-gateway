@@ -8,5 +8,16 @@
             "C09EC7ZS05S", // #penumbra
             "C039PAG1AV7" // #slack-welcome-start
         ]
+    },
+    {
+        "name": "aces",
+        "displayName": "Aces",
+        "active": true,
+        "channels": [
+            "C0266FRGT", // #announcements
+            "C09L87DU3T5", // #aces
+            "C09LXGGCGRX", // #aces-bulletin
+            "C039PAG1AV7" // #slack-welcome-start
+        ]
     }
 ]
