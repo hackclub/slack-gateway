@@ -20,5 +20,17 @@
             "C09L3JS8FT9", //#aces-support
             "C039PAG1AV7" // #slack-welcome-start
         ]
+    },
+    {
+        "name": "buildboard",
+        "displayName": "Buildboard",
+        "active": true,
+        "channels": [
+            "C0266FRGT", // #announcements
+            "C09PAAVLZ16", // #buildboard
+            "C09N2QV58QP", // #buildboard-bulletin
+            "C09NBSLS21Z", //#buildboard-support
+            "C039PAG1AV7" // #slack-welcome-start
+        ]
     }
 ]
