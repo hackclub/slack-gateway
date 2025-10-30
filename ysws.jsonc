@@ -32,5 +32,15 @@
             "C09NBSLS21Z", //#buildboard-support
             "C039PAG1AV7" // #slack-welcome-start
         ]
+    },
+    {
+        "name": "patchbay",
+        "displayName": "PatchBay",
+        "active": true,
+        "channels": [
+            "C0266FRGT", // #announcements
+            "C09P5VCD0TC", //#patchbay
+            "C039PAG1AV7" // #slack-welcome-start
+        ]
     }
 ]
